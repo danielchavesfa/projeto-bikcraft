@@ -6,6 +6,8 @@
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0px 20px;
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -73,6 +75,7 @@
   .header-container img {
     margin-bottom: 24px;
     margin: auto;
+    width: 200px;
   }
 
   .menu {
@@ -80,10 +83,23 @@
     padding-top: 20px;
   }
 
-  .menu li {
-  }
-
   .menu a {
     font-size: 1.25rem;
+    background-color: var(--c1);
+    padding: 16px 32px;
+    border-radius: 4px;
+    transition: .3s;
+  }
+
+  .menu a:hover {
+    background-color: var(--c2);
+  }
+
+  .menu a::after {
+    display: none;
+  }
+
+  .menu li::before {
+    display: none;
   }
 }
