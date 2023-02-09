@@ -8,10 +8,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0px 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0px 20px;
-  box-sizing: border-box;
 }
 
 @media (max-width: 800px) {
@@ -34,14 +30,6 @@
   margin: 0;
 }
 
-.introducao-conteudo h1 {
-  color: var(--c12);
-}
-
-.introducao-conteudo p {
-  color: var(--c7);
-}
-
 .introducao-img {
   margin-bottom: -120px;
 }
@@ -49,5 +37,4 @@
 .introducao-img img {
   height: 100%;
   object-fit: cover;
-  border-radius: 4px;
 }
