@@ -1,0 +1,53 @@
+.termos-bg {
+  background-color: var(--c1);
+}
+
+.termos {
+  padding: 60px 20px 60px 20px;
+}
+
+.termos-conteudo {
+  background-color: var(--c12);
+  padding: 60px 20px 60px 20px;
+}
+
+.termos-texto {
+  max-width: 800px;
+}
+
+.termos-conteudo h2 {
+  margin-bottom: 16px;
+}
+
+.termos-conteudo h2:nth-child(n+2) {
+  margin-top: 16px;
+}
+
+.termos-conteudo p {
+  color: var(--c2);
+  font: 400 1.2rem/1.5 'Roboto', sans-serif;
+  max-width: 70ch;
+}
+
+.termos-conteudo p + p {
+  margin-bottom: 16px;
+}
+
+.termos-conteudo p:last-child {
+  margin-bottom: 0px;
+}
+
+@media (max-width: 800px) {
+  .termos,
+  .termos-conteudo {
+    padding: 30px 20px 30px 20px;
+  }
+
+  .termos > h1 {
+    font-size: 3rem;
+  }
+
+  .termos > p {
+    text-transform: lowercase;
+  }
+}
