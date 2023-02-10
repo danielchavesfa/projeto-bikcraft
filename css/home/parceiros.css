@@ -1,6 +1,6 @@
 .parceiros-bg {
   margin-top: 200px;
-  height: 1000px;
+  margin-bottom: 120px;
 }
 
 .parceiros > h1 {
@@ -34,6 +34,10 @@
 @media (max-width: 800px) {
     .parceiros-lista {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .parceiros-lista > li {
+    padding: 16px;
   }
 
   .parceiros-lista > li:nth-child(odd) {

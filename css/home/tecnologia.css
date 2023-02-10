@@ -16,6 +16,10 @@
   padding-bottom: 160px;
 }
 
+.tecnologia-conteudo > p {
+  margin-bottom: 20px;
+}
+
 .tecnologia-conteudo > span{
   display: block;
   padding-bottom: 20px;

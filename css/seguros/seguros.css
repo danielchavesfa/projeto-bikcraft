@@ -1,0 +1,105 @@
+.seguros-bg {
+  background-color: var(--c1);
+}
+
+.seguros {
+  padding-top: 60px;
+}
+
+.seguros > h2 {
+  padding-bottom: 80px;
+}
+
+.seguros-conteudo {
+  display: flex;
+  gap: 0 40px;
+  padding-bottom: 120px;
+  align-items: center;
+}
+
+.seguro-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0 120px;
+  width: 100%;
+  background-color: var(--c0);
+  padding: 32px 60px 32px 68px;
+  border-radius: 4px;
+  place-items: start;
+}
+
+.seguro-card h3 {
+  padding-bottom: 16px;
+}
+
+.seguro-card .seguro-plano-preco {
+  grid-column: 2;
+}
+
+.seguro-card .btn-escuro,
+.seguro-card .btn-gradient {
+  grid-column: 1;
+}
+
+.seguro-plano-prata > h3 {
+  color: #c0c0c0;
+}
+
+.seguro-plano-ouro > h3 {
+  color: #FFD700;
+}
+
+.seguro-plano-preco {
+  text-align: end;
+}
+
+.mensal {
+  display: block;
+}
+
+.seguro-plano-vantagens > li {
+  display: flex;
+  padding-bottom: 16px;
+  position: relative;
+  align-items: center;
+}
+
+.seguro-plano-vantagens li:last-child {
+  padding-bottom: 40px;
+}
+
+.seguro-plano-vantagens > li > img {
+  position: absolute;
+  left: -24px;
+}
+
+@media (max-width: 1100px) {
+  .seguro-card {
+    gap: 0 40px;
+    margin-bottom: 40px;
+  }
+  
+  .seguros-conteudo {
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .seguro-card {
+    width: initial;
+    gap: 0;
+    padding: 32px 60px;
+    place-items: center;
+  }
+
+  .seguro-card .seguro-plano-preco {
+    grid-column: 1;
+    padding-bottom: 20px;
+  }
+
+  .seguro-card .seguro-plano-vantagens {
+    grid-column: 1;
+  }
+}

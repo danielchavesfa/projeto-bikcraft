@@ -18,10 +18,29 @@
   display: inline-block;
   border-radius: 4px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, .15);
+  white-space: nowrap;
+  max-width: max-content;
 }
 
 .btn-gradient:hover {
   background: var(--gradient2);
+}
+
+.btn-gradient.btn-escuro {
+  background: var(--c1);
+  color: var(--c12);
+  white-space: nowrap;
+}
+
+.btn-escuro:hover {
+  background: var(--c2);
+}
+
+@media (max-width: 600px) {
+  .btn-gradient,
+  .btn-escuro {
+    font: 600 1rem var(--font-texto);
+  }
 }
 
 .btn-link {
