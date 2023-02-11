@@ -19,7 +19,7 @@
 }
 
 .magic-bg {
-  background-image: linear-gradient(to left,var(--c1) 80%, var(--c12) 80%);
+  background-image: linear-gradient(to left,var(--c1) 70%, var(--c12) 70%);
   padding: 60px 0;
 }
 
