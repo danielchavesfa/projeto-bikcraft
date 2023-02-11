@@ -1,0 +1,133 @@
+.bicicletas-bg {
+  background-color: var(--c1);
+}
+
+.bicicletas-titulo {
+  padding: 60px 0 60px 20px;
+}
+
+#bicicletas {
+  display: grid;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.bicicletas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.magic-bg {
+  background-image: linear-gradient(to left,var(--c1) 80%, var(--c12) 80%);
+  padding: 60px 0;
+}
+
+.bicicletas-imagem {
+  display: grid;
+  position: relative;
+}
+
+.bicicletas-imagem span {
+  position: absolute;
+  padding: 8px;
+  background-color: #000;
+  border-radius: 4px 0 0 4px;
+  top: 20px;
+  right: 0;
+}
+
+.bicicletas-conteudo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.bicicletas-conteudo h2 {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.bicicletas-conteudo p {
+  margin-bottom: 32px;
+  max-width: 45ch;
+}
+
+.bicicletas-conteudo h2::before {
+  content: '';
+  display: block;
+  background-color: var(--p1);
+  width: 12px;
+  height: 8px;
+  margin-bottom: 4px;
+}
+
+.bicicletas-conteudo h2,
+.bicicletas-conteudo p {
+  grid-column: 1/-1;
+}
+
+.bicicletas-conteudo a {
+  align-self: end;
+}
+
+.bicicletas-conteudo a::after {
+  content: '';
+  display: inline-block;
+  background-image: url('../../img/icones/seta.svg');
+  margin-left: 8px;
+  width: 18px;
+  height: 10px;
+  transition: transform .3s;
+}
+
+.bicicletas-conteudo a:hover::after {
+  transform: translateX(8px);
+}
+
+.btn-gradient.seta {
+  display: flex;
+  align-items: center;
+}
+
+.bicicletas-conteudo-vantagens {
+  display: grid;
+  gap: 20px;
+}
+
+.bicicletas-conteudo-vantagens li {
+  display: flex;
+}
+
+.bicicletas-conteudo-vantagens img {
+  margin-right: 8px;
+}
+
+@media (max-width: 800px) {
+  .bicicletas-titulo {
+    padding: 40px 0 40px 20px;
+  }
+  
+  #bicicletas {
+    display: grid;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .bicicletas {
+    grid-template-columns: 1fr;
+  }
+
+  .magic-bg {
+    background: var(--c1);
+  }
+
+  .bicicletas-conteudo-vantagens {
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 32px;
+  }
+
+  .bicicletas-conteudo a {
+    grid-column: 1;
+  }
+}
