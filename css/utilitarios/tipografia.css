@@ -80,7 +80,7 @@
 }
 
 .font-2-s {
-  font: 400 1rem/1.5 var(--font-texto);
+  font: 400 1.25rem/1.5 var(--font-texto);
 }
 
 @media (max-width: 600px) {

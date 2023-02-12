@@ -1,105 +1,139 @@
+:root {
+  --espacamento: 60px;
+}
+
 .seguros-bg {
   background-color: var(--c1);
 }
 
-.seguros {
-  padding-top: 60px;
-}
-
-.seguros > h2 {
-  padding-bottom: 80px;
-}
-
-.seguros-conteudo {
-  display: flex;
-  gap: 0 40px;
-  padding-bottom: 120px;
-  align-items: center;
-}
-
-.seguro-card {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 0 120px;
-  width: 100%;
+.vantagens {
+  padding-top: var(--espacamento);
+  padding-bottom: var(--espacamento);
   background-color: var(--c0);
-  padding: 32px 60px 32px 68px;
+}
+
+.vantagens h2 {
+  margin-bottom: var(--espacamento);
+}
+
+.vantagens-conteudo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 32px;
+}
+
+.perguntas {
+  padding-bottom: var(--espacamento);
+}
+
+.seguros-titulo,
+.perguntas > h2 {
+  padding-top: var(--espacamento);
+  padding-bottom: var(--espacamento);
+}
+
+#seguros .seguros-conteudo {
+  padding-bottom: 60px;
+}
+
+.perguntas-conteudo {
+  max-width: 800px;
+  display: grid;
+  gap: 20px;
+}
+
+.perguntas-container {
+  padding: 20px;
   border-radius: 4px;
-  place-items: start;
 }
 
-.seguro-card h3 {
-  padding-bottom: 16px;
+.perguntas-container dt {
+  margin-bottom: 8px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
 }
 
-.seguro-card .seguro-plano-preco {
-  grid-column: 2;
-}
-
-.seguro-card .btn-escuro,
-.seguro-card .btn-gradient {
-  grid-column: 1;
-}
-
-.seguro-plano-prata > h3 {
-  color: #c0c0c0;
-}
-
-.seguro-plano-ouro > h3 {
-  color: #FFD700;
-}
-
-.seguro-plano-preco {
-  text-align: end;
-}
-
-.mensal {
+.perguntas-container dt::before {
+  content: '';
+  width: 12px;
+  height: 8px;
+  background-color: var(--p1);
   display: block;
 }
 
-.seguro-plano-vantagens > li {
-  display: flex;
-  padding-bottom: 16px;
+.perguntas-container dt::after {
+  content: '';
+  width: 14px;
+  height: 6px;
+  display: block;
+  background: url('../../img/icones/seta-abrir.svg');
+  transition: transform .3s;
+}
+
+.perguntas-container dt:hover::after {
+  transform: rotate(180deg);
+}
+
+.perguntas-container:nth-child(odd) {
+  background-color: var(--c11);
+}
+
+.perguntas-container dd {
+  background-color: var(--c10);
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
   position: relative;
-  align-items: center;
 }
 
-.seguro-plano-vantagens li:last-child {
-  padding-bottom: 40px;
-}
-
-.seguro-plano-vantagens > li > img {
+.perguntas-container dd::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid var(--c10);
   position: absolute;
-  left: -24px;
+  top: -8px;
 }
 
-@media (max-width: 1100px) {
-  .seguro-card {
-    gap: 0 40px;
-    margin-bottom: 40px;
+@media (max-width: 800px) {
+  .seguros-titulo,
+  .perguntas > h2,
+  #seguros .seguros {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
-  
-  .seguros-conteudo {
-    flex-direction: column;
-    width: 50%;
-    margin: auto;
+
+  #seguros .seguros-conteudo {
+    padding-bottom: 30px;
+  }
+
+  .vantagens {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .vantagens h2 {
+    margin-bottom: 30px;
+  }
+
+  #seguros .seguros-conteudo,
+  .perguntas {
+    padding-bottom: 30px;
   }
 }
 
-@media (max-width: 600px) {
-  .seguro-card {
-    width: initial;
-    gap: 0;
-    padding: 32px 60px;
-    place-items: center;
+@media (max-width: 500px) {
+  .vantagens-conteudo {
+    grid-template-columns: 1fr;
   }
 
-  .seguro-card .seguro-plano-preco {
-    grid-column: 1;
-    padding-bottom: 20px;
-  }
-
-  .seguro-card .seguro-plano-vantagens {
-    grid-column: 1;
+  .vantagens h2,
+  .perguntas h2 {
+    font-size: 3.1rem;
   }
 }
