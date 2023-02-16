@@ -7,9 +7,11 @@
 
 @import url('./home/header.css');
 @import url('./home/introducao.css');
+
 @import url('./bicicletas/bicicletas-lista.css');
 @import url('./bicicletas/bicicletas.css');
 @import url('./bicicletas/bicicleta-nimbus.css');
+
 @import url('./home/tecnologia.css');
 @import url('./home/parceiros.css');
 @import url('./home/depoimento.css');
@@ -18,3 +20,8 @@
 
 @import url('./termos/termos.css');
 @import url('./seguros/seguros.css');
+
+@import url('./contato/contato.css');
+@import url('./contato/locais.css');
+
+@import url('./orcamento/orcamento.css');

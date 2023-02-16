@@ -1,5 +1,5 @@
 .depoimento-bg {
-  background-color: var(--p1);
+  background: var(--p1);
 }
 
 .depoimento {
@@ -22,6 +22,7 @@
 .depoimento-texto {
   display: grid;
   align-content: end;
+  background: url('../../img/dec/bottom-right-p.svg') no-repeat bottom 40px right 40px;
 }
 
 .depoimento-texto p {
