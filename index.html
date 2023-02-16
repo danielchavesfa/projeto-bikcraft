@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Bicicletas elétricas feita sob medida.">
+  <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
   <title>Bikcraft - Bicicletas Elétricas</title>
 </head>
@@ -14,7 +15,7 @@
 
   <header class="header-bg">
     <div class="header-container container">
-      <a href="./index.html"><img src="./img/bikcraft.svg" alt="Bikcraft"></a>
+      <a href="./index.html"><img src="./img/bikcraft.svg" width="136" height="32" alt="Bikcraft"></a>
       <ul class="menu">
         <li><a href="./bicicletas.html">Bicicletas</a></li>
         <li><a href="./seguros.html">Seguro</a></li>
@@ -31,9 +32,10 @@
           Eramos apaixonados por pedalar e também fazer.</p>
         <a class="btn-gradient" href="./bicicletas.html">Escolha a sua</a>
       </div>
-      <div class="introducao-img">
-        <img src="./img/bicicletas/nimbus-home.jpg" alt="">
-      </div>
+      <picture class="introducao-img">
+        <source media="max-width: 800px" srcset="./img/bicicletas/nimbus.jpg">
+        <img src="./img/fotos/introducao.jpg" width="1280" height="1600" alt="Bicicleta preta">
+      </picture>
     </div>
   </main>
 
@@ -43,21 +45,21 @@
       <ul class="bicicletas-lista-itens">
         <li>
           <a href="./bicicletas/magic.html" rel="next">
-            <img src="img/bicicletas/magic-home.jpg" alt="">
+            <img src="img/bicicletas/magic-home.jpg" width="920" height="1040" alt="Bicicleta preta">
             <h3 class="font-1-xl cor-2">Magic Might</h3>
             <span class="font-2-m cor-3">R$ 2499</span>
           </a>
         </li>
         <li>
           <a href="./bicicletas/nebula.html" rel="next">
-            <img src="img/bicicletas/nebula-home.jpg" alt="">
+            <img src="img/bicicletas/nebula-home.jpg" width="920" height="1040" alt="Bicicleta branca">
             <h3 class="font-1-xl cor-2">Nebula Cosmic</h3>
             <span class="font-2-m cor-3">R$ 3999</span>
           </a>
         </li>
         <li>
           <a href="./bicicletas/nimbus.html" rel="next">
-            <img src="img/bicicletas/nimbus-home.jpg" alt="">
+            <img src="img/bicicletas/nimbus-home.jpg" width="920" height="1040" alt="Bicicleta preta">
             <h3 class="font-1-xl cor-2">Nimbus Stark</h3>
             <span class="font-2-m cor-3">R$ 4999</span>
           </a>
@@ -79,7 +81,7 @@
           <li>
             <div class="tecnologia-vantagens-titulo">
               <h3 class="font-1-l-b cor-10">Motor Elétrico</h3>
-              <img src="./img/icones/eletrica.svg" alt>
+              <img src="./img/icones/eletrica.svg" width="24" height="24" alt>
             </div>
             <p class="font-2-xs cor-8">Toda Bikcraft é equipada com um motor elétrico que possui duração de até 120h. A
               bateria é recarregada com a sua energia gasta ao pedalar.</p>
@@ -87,7 +89,7 @@
           <li>
             <div class="tecnologia-vantagens-titulo">
               <h3 class="font-1-l-b cor-10">Rastreador</h3>
-              <img src="./img/icones/rastreador.svg" alt>
+              <img src="./img/icones/rastreador.svg" width="24" height="24" alt>
             </div>
             <p class="font-2-xs cor-8">Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos rastreadores e
               sistemas anti-furto para garantir o seu sossego.</p>
@@ -95,7 +97,7 @@
         </ul>
       </div>
       <div class="tecnologia-imagem">
-        <img src="./img/fotos/tecnologia.jpg" alt>
+        <img src="./img/fotos/tecnologia.jpg" width="1200" height="1920" alt>
       </div>
     </div>
   </article>
@@ -104,14 +106,14 @@
     <div class="parceiros container">
       <h1 class="font-1-xxl cor-1">nossos parceiros<span class="ponto-final">.</span></h1>
       <ul class="parceiros-lista">
-        <li><img src="./img/parceiros/caravan.svg" alt="caravan"></li>
-        <li><img src="./img/parceiros/dogs.svg" alt="dogs"></li>
-        <li><img src="./img/parceiros/flexblog.svg" alt="flexblog"></li>
-        <li><img src="./img/parceiros/handel.svg" alt="handel"></li>
-        <li><img src="./img/parceiros/lescone.svg" alt="lescone"></li>
-        <li><img src="./img/parceiros/ranek.svg" alt="ranek"></li>
-        <li><img src="./img/parceiros/surfbot.svg" alt="surfbot"></li>
-        <li><img src="./img/parceiros/wildbeast.svg" alt="wildbeast"></li>
+        <li><img src="./img/parceiros/caravan.svg" width="140" height="38" alt="caravan"></li>
+        <li><img src="./img/parceiros/dogs.svg" width="152" height="39" alt="dogs"></li>
+        <li><img src="./img/parceiros/flexblog.svg" width="165" height="38" alt="flexblog"></li>
+        <li><img src="./img/parceiros/handel.svg" width="208" height="41" alt="handel"></li>
+        <li><img src="./img/parceiros/lescone.svg" width="208" height="41" alt="lescone"></li>
+        <li><img src="./img/parceiros/ranek.svg" width="149" height="36" alt="ranek"></li>
+        <li><img src="./img/parceiros/surfbot.svg" width="200" height="49" alt="surfbot"></li>
+        <li><img src="./img/parceiros/wildbeast.svg" width="196" height="34" alt="wildbeast"></li>
       </ul>
     </div>
   </section>
@@ -119,7 +121,7 @@
   <section class="depoimento-bg" aria-label="Depoimento">
     <div class="depoimento container">
       <div class="depoimento-imagem">
-        <img src="./img/fotos/depoimento.jpg" alt="Uma mulher em cima de uma bicicleta Bikcraft">
+        <img src="./img/fotos/depoimento.jpg" width="1560" height="1360" alt="Uma mulher em cima de uma bicicleta Bikcraft">
       </div>
       <div class="depoimento-texto">
         <blockquote class="font-coment cor-1">
@@ -140,19 +142,19 @@
           <span class="seguro-plano-preco font-1-xl">R$99<span class="mensal font-1-xs cor-6">mensal</span></span>
           <ul class="seguro-plano-vantagens font-2-s">
             <li>
-              <img src="./img/icones/lista.svg" alt>
+              <img src="./img/icones/lista.svg" width="14" height="9" alt>
               <p class="font-2-s">Duas trocas por ano</p>
             </li>
             <li>
-              <img src="./img/icones/lista.svg" alt>
+              <img src="./img/icones/lista.svg" width="14" height="9" alt>
               <p class="font-2-s">Assistência técnica</p>
             </li>
             <li>
-              <img src="./img/icones/lista.svg" alt>
+              <img src="./img/icones/lista.svg" width="14" height="9" alt>
               <p class="font-2-s">Suporte 08h às 18h</p>
             </li>
             <li>
-              <img src="./img/icones/lista.svg" alt>
+              <img src="./img/icones/lista.svg" width="14" height="9" alt>
               <p class="font-2-s">Cobertura estadual</p>
             </li>
           </ul>
@@ -163,27 +165,27 @@
           <span class="seguro-plano-preco font-1-xl">R$199<span class="mensal font-1-xs cor-6">mensal</span></span>
           <ul class="seguro-plano-vantagens font-2-s">
             <li>
-              <img src="./img/icones/lista.svg" alt>
+              <img src="./img/icones/lista.svg" width="14" height="9" alt>
               <p class="font-2-s">Duas trocas por ano</p>
             </li>
             <li>
-              <img src="./img/icones/lista.svg" alt>
+              <img src="./img/icones/lista.svg" width="14" height="9" alt>
               <p class="font-2-s">Assistência técnica</p>
             </li>
             <li>
-              <img src="./img/icones/lista.svg" alt>
+              <img src="./img/icones/lista.svg" width="14" height="9" alt>
               <p class="font-2-s">Suporte 08h às 18h</p>
             </li>
             <li>
-              <img src="./img/icones/lista.svg" alt>
+              <img src="./img/icones/lista.svg" width="14" height="9" alt>
               <p class="font-2-s">Cobertura nacional</p>
             </li>
             <li>
-              <img src="./img/icones/lista.svg" alt>
+              <img src="./img/icones/lista.svg" width="14" height="9" alt>
               <p class="font-2-s">Desconto em parceiros</p>
             </li>
             <li>
-              <img src="./img/icones/lista.svg" alt>
+              <img src="./img/icones/lista.svg" width="14" height="9" alt>
               <p class="font-2-s">Acesso ao Clube Bikcraft</p>
             </li>
           </ul>
@@ -196,7 +198,7 @@
   <footer class="contato-bg">
     <div class="contato-container container">
       <div class="contato-imagem">
-        <img src="img/bikcraft.svg" alt="Bikcraft">
+        <img src="img/bikcraft.svg" width="136" height="32" alt="Bikcraft">
       </div>
       <div class="contato-conteudo">
         <h2 class="font-2-x-b">CONTATO</h2>
@@ -207,9 +209,9 @@
           <li>Praia Grande - SP</li>
         </ul>
         <div class="contato-conteudo-redes">
-          <a href=""><img src="img/redes/instagram.svg" alt="Instagram"></a>
-          <a href=""><img src="img/redes/facebook.svg" alt="Facebook"></a>
-          <a href=""><img src="img/redes/youtube.svg" alt="YouTube"></a>
+          <a href=""><img src="img/redes/instagram.svg" width="32" height="32" alt="Instagram"></a>
+          <a href=""><img src="img/redes/facebook.svg" width="32" height="32" alt="Facebook"></a>
+          <a href=""><img src="img/redes/youtube.svg" width="32" height="32" alt="YouTube"></a>
         </div>
       </div>
       <div class="contato-informacoes">

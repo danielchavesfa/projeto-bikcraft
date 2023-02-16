@@ -25,7 +25,8 @@
 }
 
 .bicicletas-lista-itens img {
-  min-width: 340px;
+  min-width: 240px;
+  object-fit: cover;
 }
 
 .bicicletas-lista-itens h3 {
