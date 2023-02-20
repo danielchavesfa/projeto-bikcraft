@@ -36,7 +36,8 @@
   transition: .3s;
 }
 
-.menu li:hover::before {
+.menu li:hover::before,
+.menu li.ativo::before {
   opacity: 100%;
   top: 0px;
 }
@@ -44,7 +45,7 @@
 .menu a {
   color: #fff;
   font: 400 1rem var(--font-titulo);
-  padding: 8px 4px;
+  padding: 8px 0px;
   position: relative;
 }
 
@@ -59,7 +60,8 @@
   transition: .3s;
 }
 
-.menu a:hover::after {
+.menu a:hover::after,
+.menu a.ativo::after {
   width: 100%;
 }
 
