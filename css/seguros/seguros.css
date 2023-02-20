@@ -89,7 +89,7 @@
   background-color: var(--c11);
 }
 
-.perguntas-container dd {
+.js .perguntas-container dd {
   background-color: var(--c10);
   padding: 8px;
   border-radius: 4px;
@@ -98,7 +98,7 @@
   display: none;
 }
 
-.perguntas-container dd.ativo {
+.js .perguntas-container dd.ativo {
   display: block;
 }
 
