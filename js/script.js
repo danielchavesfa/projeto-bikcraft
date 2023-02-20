@@ -17,3 +17,20 @@ parametros.forEach(p => {
         elemento.checked = true;
     }
 });
+
+//Perguntas frequentes
+const perguntas = document.querySelectorAll('.perguntas-container button');
+
+function mostrarResposta(e) {
+    const pergunta = e.currentTarget;
+    const controls = pergunta.getAttribute('aria-controls');
+    const resposta = document.getElementById(controls);
+
+    resposta.classList.toggle('ativo');
+    const ativo = resposta.classList.contains('ativo');
+    pergunta.setAttribute('aria-expanded', ativo);
+}
+
+perguntas.forEach(pergunta => {
+    pergunta.addEventListener('click', mostrarResposta);
+});
