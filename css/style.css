@@ -4,6 +4,7 @@
 @import url('./utilitarios/tipografia.css');
 @import url('./utilitarios/componentes.css');
 @import url('./utilitarios/espacamento.css');
+@import url('./utilitarios/anima-plugin.css');
 
 @import url('./home/header.css');
 @import url('./home/introducao.css');

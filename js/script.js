@@ -47,3 +47,9 @@ function moverImagemTop(e) {
 imagens.forEach(img => {
     img.addEventListener('click', moverImagemTop);
 });
+
+//animação
+
+if(window.SimpleAnime) {
+    new SimpleAnime();
+}
