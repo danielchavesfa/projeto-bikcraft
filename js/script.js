@@ -34,3 +34,16 @@ function mostrarResposta(e) {
 perguntas.forEach(pergunta => {
     pergunta.addEventListener('click', mostrarResposta);
 });
+
+//Galeria imagens
+const galeria = document.querySelector('.nimbus-imagens');
+const imagens = document.querySelectorAll('.nimbus-imagens img');
+
+function moverImagemTop(e) {
+    if(matchMedia('(min-width: 800px)').matches)
+        galeria.prepend(e.currentTarget);
+}
+
+imagens.forEach(img => {
+    img.addEventListener('click', moverImagemTop);
+});
